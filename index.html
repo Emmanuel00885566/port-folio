@@ -6,58 +6,114 @@
   <title>Adeboye Emmanuel Oluwatosin - Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
-  <button class="toggle-btn" onclick="toggleTheme()">Toggle Light Mode</button>
-  <nav class="mobile-nav">
-  <button class="hamburger" onclick="toggleMenu()">☰</button>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+  <!-- Light Mode Toggle -->
+  <button class="toggle-btn" onclick="toggleTheme()">☀️ Toggle Light Mode</button>
 
-  <header>
-  <img src="images/emmanuel.jpg" alt="Adeboye Emmanuel Oluwatosin" class="profile-pic" />
-  <h1>Adeboye Emmanuel Oluwatosin</h1>
-  <p>Web Developer | Designer | Programmer</p>
-</header>
-
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <div class="logo">E-MADE TECHHUB</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
   <main>
-    <section class="about">
+    <!-- Hero Section -->
+    <header id="hero" class="hero" data-aos="fade-down">
+      <img src="images/emmanuel.jpg" alt="Adeboye Emmanuel Oluwatosin" class="profile-pic" />
+      <h1>Adeboye Emmanuel Oluwatosin</h1>
+      <p>Web Developer | Designer | Programmer</p>
+    </header>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section" data-aos="fade-up">
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML5</div>
+        <div class="skill-card">CSS3</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">React.js</div>
+        <div class="skill-card">Angular</div>
+        <div class="skill-card">Git & GitHub</div>
+        <div class="skill-card">Responsive Design</div>
+        <div class="skill-card">UI/UX Principles</div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section" data-aos="fade-up">
       <h2>About Me</h2>
-      <p>I’m a front-end web developer driven by a deep passion for technology and clean, user-focused design. I specialize in creating responsive, accessible, and engaging web interfaces using HTML, CSS, JavaScript, ReactJS, and Angular. My development approach blends creativity with precision, ensuring each project not only looks great but also functions seamlessly across devices and platforms.
-
-My journey into tech was fueled by curiosity and a desire to build meaningful digital experiences. I’m constantly learning, exploring new tools, and staying updated with the latest trends in front-end development. Whether I’m building from scratch, improving performance, or collaborating with a team, I bring energy, focus, and a problem-solving mindset to every line of code.</p>
+      <div class="about-card">
+        <p>
+          I’m a front-end web developer driven by a deep passion for technology and clean, user-focused design.
+          I specialize in creating responsive, accessible, and engaging web interfaces using HTML, CSS, JavaScript, ReactJS, and Angular.
+          <br /><br />
+          My development approach blends creativity with precision, ensuring each project not only looks great but also functions seamlessly across devices and platforms.
+          <br /><br />
+          My journey into tech was fueled by curiosity and a desire to build meaningful digital experiences.
+          I’m constantly learning, exploring new tools, and staying updated with the latest trends in front-end development.
+          <br /><br />
+          Whether I’m building from scratch, improving performance, or collaborating with a team, I bring energy, focus, and a problem-solving mindset to every line of code.
+        </p>
+      </div>
     </section>
 
-    <section class="project">
-      <h2>BR-Architects</h2>
-      <p>A professional website template for architectural firms, showcasing modern layouts and minimal design.</p>
-      <a href="https://architect-clone.vercel.app/" target="_blank">View Project</a>
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section" data-aos="fade-up">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <h3>BR-Architects</h3>
+          <p>A professional website template for architectural firms, showcasing modern layouts and minimal design.</p>
+          <a href="https://architect-clone.vercel.app/" target="_blank">View Project</a>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <h3>Social App Template</h3>
+          <p>A sleek front-end design for a modern social media platform, with user profile and feed mockups.</p>
+          <a href="https://social-app-pi-black.vercel.app/" target="_blank">View Project</a>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+          <h3>To-Do List Site</h3>
+          <p>A productivity tool built to help users manage daily tasks with CRUD functionality and intuitive UX.</p>
+          <a href="https://to-do-list-delta-indol-14.vercel.app/" target="_blank">View Project</a>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+          <h3>Awake Emporium</h3>
+          <p>A clean and vibrant fabrics sale site built for e-commerce, including product listings and cart mockups.</p>
+          <a href="https://awake-green.vercel.app/" target="_blank">View Project</a>
+        </div>
+      </div>
     </section>
 
-    <section class="project">
-      <h2>Social App Template</h2>
-      <p>A sleek front-end design for a modern social media platform, with user profile and feed mockups.</p>
-      <a href="https://social-app-pi-black.vercel.app/" target="_blank">View Project</a>
-    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section" data-aos="fade-up">
+      <h2>Contact Me</h2>
+      <p>If you’d like to collaborate, have questions, or just want to say hello — I’m just an email away.</p>
 
-    <section class="project">
-      <h2>To-Do List Site</h2>
-      <p>A productivity tool built to help users manage daily tasks with CRUD functionality and intuitive UX.</p>
-      <a href="https://to-do-list-delta-indol-14.vercel.app/" target="_blank">View Project</a>
-    </section>
+      <div class="contact-links">
+        <a href="mailto:emmanuelniyi1997@gmail.com" class="contact-btn">📧 emmanuelniyi1997@gmail.com</a>
+        <a href="https://github.com/Emmanuel00885566" target="_blank" class="contact-btn">💻 GitHub</a>
+        <a href="assets/Emmanuel-Resume.pdf" download class="contact-btn">📄 Download Resume</a>
+      </div>
 
-    <section class="project">
-      <h2>Awake Emporium</h2>
-      <p>A clean and vibrant fabrics sale site built for e-commerce, including product listings and cart mockups.</p>
-      <a href="https://awake-green.vercel.app/" target="_blank">View Project</a>
+      
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
     <p>Contact: <a href="mailto:emmanuelniyi1997@gmail.com">emmanuelniyi1997@gmail.com</a></p>
     <div class="footer-links">
@@ -65,6 +121,17 @@ My journey into tech was fueled by curiosity and a desire to build meaningful di
     </div>
   </footer>
 
+  <!-- Script -->
   <script src="script.js"></script>
+
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+  </script>
 </body>
 </html>
